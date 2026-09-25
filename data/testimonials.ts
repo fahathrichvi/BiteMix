@@ -24,7 +24,7 @@ export const testimonials: Testimonial[] = [
     place: "கொழும்பு",
     rating: 5,
     review: "முறுக்கு நல்ல மொறுமொறுப்பு, எண்ணெய் வாசனை இல்லை. பொதியும் சுத்தமாக இருந்தது.",
-    product: "உரைப்பு முறுக்கு",
+    product: "உறைப்பு முறுக்கு",
   },
   {
     name: "சுமதி",

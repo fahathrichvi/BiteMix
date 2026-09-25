@@ -79,7 +79,7 @@ export const products: Product[] = [
   },
   {
     id: "spicy-murukku",
-    name: "உரைப்பு முறுக்கு",
+    name: "உறைப்பு முறுக்கு",
     description: "மிளகாய்த் தூள் மணக்கும், மொறுமொறுப்பான காரமான முறுக்கு.",
     categories: ["murukku", "spicy"],
     image: "/images/products/spicy-murukku.png",
