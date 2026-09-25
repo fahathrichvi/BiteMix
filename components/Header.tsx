@@ -91,7 +91,7 @@ export function Header() {
       </a>
       <div className="container-page flex h-[4.5rem] items-center justify-between gap-4">
         <a href="#home" className="shrink-0 rounded-lg" aria-label={`${siteConfig.name} — முகப்பு`}>
-          <Logo />
+          <Logo priority />
         </a>
 
         <nav aria-label="முதன்மை வழிசெலுத்தல்" className="hidden xl:block">

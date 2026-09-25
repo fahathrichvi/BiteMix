@@ -25,7 +25,7 @@ export function Footer() {
       />
       <div className="container-page grid gap-10 py-14 text-center sm:grid-cols-2 sm:gap-12 sm:py-16 sm:text-left lg:grid-cols-[1.4fr_1fr_1fr] lg:py-20">
         <div className="flex flex-col items-center sm:items-start">
-          <Logo tone="light" />
+          <Logo tone="light" className="size-28 sm:size-32" />
           <p className="mt-5 max-w-xs font-display text-xl text-cream-50">{siteConfig.tagline}</p>
           <p className="mt-3 max-w-sm text-cream-200/75">{siteConfig.subTagline}</p>
         </div>

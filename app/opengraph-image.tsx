@@ -10,22 +10,23 @@ export const contentType = "image/png";
 export default async function OpenGraphImage() {
   const hero = await readFile(join(process.cwd(), "public/images/hero-spread.png"));
   const heroSrc = `data:image/png;base64,${hero.toString("base64")}`;
+  const logo = await readFile(join(process.cwd(), "public/brand/bite-mix-logo.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
 
   return new ImageResponse(
     (
       <div style={{ width: "100%", height: "100%", display: "flex", background: "#f7f0e3", position: "relative" }}>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 0 0 80px", width: 600 }}>
           <div style={{ display: "flex", fontSize: 30, color: "#a4502f", letterSpacing: 4 }}>HOMEMADE · SRI LANKAN</div>
-          <div style={{ display: "flex", fontSize: 118, fontWeight: 800, color: "#1f3d2b", marginTop: 12, letterSpacing: 4 }}>
-            BITE<span style={{ color: "#c0643f", marginLeft: 26 }}>MIX</span>
-          </div>
-          <div style={{ display: "flex", fontSize: 34, color: "#5c3a24", marginTop: 18, lineHeight: 1.35 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logoSrc} width={250} height={250} style={{ marginTop: 8, marginLeft: -12 }} alt="" />
+          <div style={{ display: "flex", fontSize: 34, color: "#5c3a24", marginTop: 6, lineHeight: 1.35 }}>
             Traditional homemade food, delivered to your door.
           </div>
           <div
             style={{
               display: "flex",
-              marginTop: 40,
+              marginTop: 30,
               background: "#178a4b",
               color: "white",
               fontSize: 28,
